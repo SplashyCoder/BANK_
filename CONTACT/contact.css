@@ -73,7 +73,7 @@ header {
 
 /* Hide the images by default */
 .mySlides {
-    display: none;    
+    display: none;
 }
 
 /* Next & previous buttons */
@@ -100,7 +100,7 @@ header {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: #fff;   
+    background-color: #fff;
 }
 
 /* Caption text */
@@ -128,61 +128,6 @@ header {
 
 
 
-.formContainer{
-    background-image: url(../MEDIA/real-estate-.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    grid-template-columns: repeat(2,1fr);
-    position: absolute;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    grid-gap: 25px;
-    width: 100%;
-}
-    
-
-
-
-.formContleftCont{
-    grid-column: 1/2;
-    display: grid;
-    grid-template-rows: fit-content  repeat(4,1fr);
-    grid-template-columns: 1fr;
-    width: 100%;
-    justify-items: end;
-}   
-
-.formContleftCont>div{
-    width: 300px;
-    justify-content: start;
-    height: fit-content;
-}
-
-.lstContTitleCont title{
-    grid-row: 1/2 ;
-}
-
-.fromContLefTitle{
-    width: 300px;
-    justify-content: start;
-    height: fit-content;
-    font-size: 60px;
-}
-
-.rightCont{
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(7,1fr) ;
-    
-    
-}
-
-
 .wellCont{
     display: flex;
     align-items: center;
@@ -195,7 +140,7 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;*/
-} 
+}
 .wellcome{
     position: absolute;
     display: grid;
@@ -242,46 +187,6 @@ header {
 }
 
 
-.directions{
-    background-color: #007335;
-    color: #fff;
-    padding: 30px;
-}
-.directions>div{
-    display: flex;
-    margin: 20px 0 20px 0;
-}
-.directions>div>img{
-    width: 50px;
-    height: 50px;
-}
-
-.botFooterRights{
-    text-align: center;
-}
-
-.botFooterContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1c1c1c;
-}
-
-.botFooterRights>p{
-    text-decoration: none;
-    color: #fff;
-    
-}
-.botFooterRights>p>a{
-    text-decoration: none;
-    color: #fff;
-    
-}
-
-.directions>div>p{
-    margin: 15px 0 15px 10px ;
-}
-
 .presentationContainer{
     height: 800px;
 }
@@ -298,7 +203,6 @@ header {
     grid-gap: 25px;
     width: 100%;
 }
-    
 
 
 .formContleftCont{
@@ -311,7 +215,7 @@ header {
     column-gap: 30px;
     height: fit-content;
     width: fit-content;
-}   
+}
 
 
 
@@ -321,6 +225,29 @@ header {
     justify-content: start;
     height: fit-content;
 }
+
+
+
+.lstContTitleCont title{
+    grid-row: 1/2 ;
+}
+
+.fromContLefTitle{
+    width: 300px;
+    justify-content: start;
+    height: fit-content;
+    font-size: 60px;
+}
+
+.rightCont{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr) ;
+
+
+}
+
 
 .advContTxt{
     margin: 0 0 0 15px ;
@@ -347,8 +274,8 @@ header {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(7,1fr) ;
-    
-    
+
+
 }
 
 .advImgCont>img{
@@ -379,6 +306,50 @@ header {
 .forMsg{
     height: 80px;
 }
+
+
+.directions{
+    background-color: #007335;
+    color: #fff;
+    padding: 30px;
+}
+.directions>div{
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+.directions>div>img{
+    width: 50px;
+    height: 50px;
+}
+
+.botFooterRights{
+    text-align: center;
+}
+
+.botFooterContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+}
+
+.botFooterRights>p{
+    text-decoration: none;
+    color: #fff;
+
+}
+.botFooterRights>p>a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.directions>div>p{
+    margin: 15px 0 15px 10px ;
+}
+
+
+
 
 @media screen and (max-width: 900px) {
 
@@ -424,7 +395,7 @@ header {
         opacity: 1;
         visibility: visible;
     }
-    
+
     .nav-list {
         flex-direction: column;
         align-items: end;
@@ -446,6 +417,34 @@ header {
     .prev, .next {
         top: 50%;
     }
+
+    .presentationContainer{
+        height: 1000px;
+    }
+
+    .fromContLefTitle{
+        font-size: 40px;
+    }
+
+    .formContainer{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content repeat(2,1fr);
+        position: unset;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        /* align-items: center; */
+        /* text-align: center; */
+        grid-gap: 25px;
+        width: 100%;
+    }
+    
+    .formCont{
+        top: 0;
+    }
+    
+
     .directions>div>img{
         width: 20px;
         height: 20px;
@@ -453,7 +452,7 @@ header {
     .directions>div>p{
         margin: 0 0 0 10px ;
     }
-    
 
-    
+
+
 }
