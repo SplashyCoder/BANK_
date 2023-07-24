@@ -306,10 +306,12 @@ header {
 }
 
 .contBtn{
-    background-color: #007335;
+    background-color: #0000;
+    border: 0.5px solid #000;
     width: 170px;
     height: 40px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .advantagesRightCont{
