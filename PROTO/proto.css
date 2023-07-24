@@ -32,7 +32,7 @@ header {
     width: 25px;
     height: 25px;
 }
-.logo {
+.headLeftImg{
     max-width: 5rem;
 }
 
@@ -59,12 +59,16 @@ header {
 .presentation{
     /* overflow: hidden; */
     height: fit-content;
+    top: 0;
+}
+.presentationBackground{
+    height: 100%;
 }
 
 
 /* Slideshow container */
 .slideshow-container {
-    top:10px;
+    /* top:10px; */
     width: 100%;
     height: fit-content;
     position: relative;
@@ -123,63 +127,6 @@ header {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-}
-
-
-
-
-.formContainer{
-    background-image: url(../MEDIA/real-estate-.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    grid-template-columns: repeat(2,1fr);
-    position: absolute;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    grid-gap: 25px;
-    width: 100%;
-}
-    
-
-
-
-.formContleftCont{
-    grid-column: 1/2;
-    display: grid;
-    grid-template-rows: fit-content  repeat(4,1fr);
-    grid-template-columns: 1fr;
-    width: 100%;
-    justify-items: end;
-}   
-
-.formContleftCont>div{
-    width: 300px;
-    justify-content: start;
-    height: fit-content;
-}
-
-.lstContTitleCont title{
-    grid-row: 1/2 ;
-}
-
-.fromContLefTitle{
-    width: 300px;
-    justify-content: start;
-    height: fit-content;
-    font-size: 60px;
-}
-
-.rightCont{
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(7,1fr) ;
-    
-    
 }
 
 
@@ -243,7 +190,8 @@ header {
 
 
 .directions{
-    background-color: #007335;
+    background-color: #1c1c1c;
+    /* background-color: #007335; */
     color: #fff;
     padding: 30px;
 }

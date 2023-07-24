@@ -32,10 +32,10 @@ header {
     width: 25px;
     height: 25px;
 }
-.logo {
+
+.headLeftImg{
     max-width: 5rem;
 }
-
 .nav-list {
     list-style-type: none;
     display: flex;
@@ -309,7 +309,7 @@ header {
 
 
 .directions{
-    background-color: #007335;
+    background-color: #1c1c1c;
     color: #fff;
     padding: 30px;
 }

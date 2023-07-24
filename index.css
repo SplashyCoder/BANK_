@@ -1,6 +1,6 @@
 :root{
     --textColor: #fff;
-    --principalGreen: #007335;
+    --principalcolor: #1C1C1C;
     font-family: 'Ysabeau Infant', sans-serif;
 
 }
@@ -33,7 +33,7 @@ header {
     width: 25px;
     height: 25px;
 }
-.logo {
+.headLeftImg{
     max-width: 5rem;
 }
 
@@ -191,15 +191,52 @@ header {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.services>div{
+    border: #000 3px solid;
+    border-radius: 25px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.serviceLogo{
+    border: #000 0.5px solid;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+.serviceLogo>img{
+    width: 50px;
+    height: 50px;
+}
+
+.meetUsLogo{
+    top: 150px;
+}
+
+.meetUsdescript{
+    text-align: center;
+
 }
 
 .services>div>a>button{
     height: 50px;
     width: 150px;
-    background-color: #007335;
-    color: #fff;
-    border: none;
+    background-color: #00000000;
+    /* color: #fff; */
+    border:0.5px solid #000;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .SHB{
@@ -233,7 +270,7 @@ iframe{
 }
 
 .directions{
-    background-color: #007335;
+    background-color: #1c1c1c;
     color: #fff;
     padding: 30px;
 }
