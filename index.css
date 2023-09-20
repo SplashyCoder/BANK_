@@ -48,6 +48,10 @@ header {
     color: #1c1c1c;
 }
 
+.modal{
+    z-index: 1000000000000;
+}
+
 .abrir-menu,
 .cerrar-menu {
     display: none;

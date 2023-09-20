@@ -1,9 +1,27 @@
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+
+prev.addEventListener('click', event => {
+  showSlides(slideIndex -= 1);
+})
+
+next.addEventListener('click', event => {
+  showSlides(slideIndex += 1);
+})
+
+
+
+// slides
 let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides() {
+  showSlides(slideIndex += 1);
+}
+
+function lessSlides() {
+  showSlides(slideIndex -= 1);
 }
 
 // Thumbnail image controls
@@ -27,17 +45,3 @@ function showSlides(n) {
 //   dots[slideIndex-1].className += " active";
 } 
 
-
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
-
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
-    document.body.style.overflow = 'hidden';
-})
-
-cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible");
-    document.body.style.overflow = 'auto';
-})
