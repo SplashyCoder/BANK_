@@ -31,11 +31,29 @@
     
     <section>
             <!-- modal form -->
-        <dialog class="modal">
-
-            <h2>loourton</h2>
-
-        </dialog>
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <form class="modalForm" action="">
+                        <div class="close">
+                            <h1>lOGIN</h1>
+                            <span id="closeModal">&times;</span>  
+                        </div>
+                        <div class="email">
+                            <label for="email" class="modalName">email</label>
+                            <input type="email" class="modalInputEmail" placeholder=" email " required>
+                        </div>
+                        <div class="pass">
+                            <label for="password" class="modalName"> contraseña </label>
+                            <input type="password" class="modalInputPass" placeholder=" contraseña " required>
+                        </div>           
+                        <button type="submit" class="suBtn" >Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Fondo sombreado -->
+            <div id="modalBackdrop" class="modal-backdrop"></div>
+        
     </section>
 
     <section class="presentation">
