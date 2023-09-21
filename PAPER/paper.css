@@ -52,10 +52,6 @@ header {
     display: none;
 }
 
-.imgRespon{
-    display: none;
-}
-
 /* modal */
 
 
@@ -135,10 +131,15 @@ header {
 }
 
 
+.imgRespon{
+    display: none;
+}
+
 .presentation{
     /* overflow: hidden; */
     height: fit-content;
     top: 0;
+    padding: 20px;
 }
 .presentationBackground{
     height: 100%;
@@ -147,7 +148,7 @@ header {
 
 /* Slideshow container */
 .slideshow-container {
-    /* top:10px; */
+    top:10px;
     width: 100%;
     height: fit-content;
     position: relative;
@@ -267,46 +268,6 @@ header {
     width: 200px;
 }
 
-.newPost{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-}
-
-
-.postFormCont{
-    width: 50%;
-    height: fit-content;
-    /* border: 5px #000 solid; */
-
-}
-
-.postForm{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-
-}
-
-.postForm>div{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-size: 2em;
-}
-
-.newPostContInp{
-    height: 80px;
-}
-
-.btNew{
-    width: 50%;
-    height: 30%;
-}
-
-.btNewCont{
-    align-items: center;
-}
 
 .directions{
     background-color: #1c1c1c;

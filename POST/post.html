@@ -23,6 +23,7 @@
                 <li><a href="../MEETUS/meetus.html">CONÓZCANOS</a></li>
                 <li><a href="../SERVICES/service.html">SERVICIOS</a></li>
                 <li><a href="../CONTACT/contact.html">CONTACTO</a></li>
+                <li><a href="../PAPER/paper.html">PUBLICACIONES</a></li>
                 <li><a id="loginNavBtn" href="#">LOGIN</a></li>
                 <li><a class="logOutNavBtn" id="logOutNavBtn" href="#">LOGOUT</a></li>
             </ul>
@@ -38,13 +39,13 @@
                             <h1>lOGIN</h1>
                             <span id="closeModal">&times;</span>  
                         </div>
-                        <div class="email">
-                            <label for="email" class="modalName">email</label>
-                            <input type="email" class="modalInputEmail" placeholder=" email " required>
+                        <div class="text">
+                            <label for="text" class="modalName">text</label>
+                            <input type="text" class="modalInputtext" placeholder=" text " required>
                         </div>
                         <div class="pass">
-                            <label for="password" class="modalName"> contraseña </label>
-                            <input type="password" class="modalInputPass" placeholder=" contraseña " required>
+                            <label for="text" class="modalName"> contraseña </label>
+                            <input type="text" class="modalInputPass" placeholder=" contraseña " required>
                         </div>           
                         <button type="submit" class="suBtn" >Ingresar</button>
                     </form>
@@ -110,13 +111,37 @@
             </div>
             <div class="wellTitle">
                 <h1>
-                    BIENVENIDO A SU PORTAL DE PROPIEDAD HORIZONTAL <br>
-                    BANCO GANADERO
+                    NUEVA PUBLICACION
                 </h1>
             </div>
         </div>
     </section>
-        <!-- code here -->
+    <section class="newPost" id="newPost">
+        <div class="postFormCont">
+            <form class="postForm" action="">
+                <div class="title">
+                    <label for="text" class="newPosTitle"> Titulo de la publicacion: </label>
+                    <br>
+                    <input type="text" class="newPosTitleInp" placeholder=" titulo " required>
+                </div>
+                <div class="cont">
+                    <label for="text" class="newPostCont"> Contenido de la publicacion: </label>
+                    <br>
+                    <textarea type="text" class="newPostContInp" placeholder=" contenido " rows="5" required></textarea>
+                </div>       
+                <div class="img">
+                    <label for="text">Imagen:</label>
+                    <br>
+                    <input type="text" class="newPostImgName" id="newPostImgName" placeholder=" Nombre de la imagen " required>
+                    <br>
+                    <input type="file" class="newPostImg" id="newPostImg" required>
+                </div>    
+                <div class="btNewCont">
+                    <button type="submit" class="suBtn btNew" >Nueva puiblicacion</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <section class="directions">
         <div class="direcAddres">
             <img src="../ASSETS/SVG/pin-48(1).svg" alt="phone icon" srcset="">
