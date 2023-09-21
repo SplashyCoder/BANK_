@@ -53,9 +53,6 @@ header {
     display: none;
 }
 
-.logOutNavBtn{
-    display: none;
-}
 
 .imgRespon{
     display: none;
@@ -85,6 +82,11 @@ header {
     width: 350px;
     border: #000 3px solid;
     border-radius: 25px;
+}
+
+
+.logOutNavBtn{
+    display: none;
 }
 
 .modal-content {

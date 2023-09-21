@@ -23,11 +23,38 @@
                 <li><a href="../MEETUS/meetus.html">CONÓZCANOS</a></li>
                 <li><a href="../SERVICES/service.html">SERVICIOS</a></li>
                 <li><a href="./contact.html">CONTACTO</a></li>
+                <li><a id="loginNavBtn" href="#">LOGIN</a></li>
+                <li><a class="logOutNavBtn" id="logOutNavBtn" href="#">LOGOUT</a></li>
             </ul>
         </nav>
     </header>
-    <section class="presentation">
-
+    
+    <section>
+            <!-- modal form -->
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <form class="modalForm" action="">
+                        <div class="close">
+                            <h1>lOGIN</h1>
+                            <span id="closeModal">&times;</span>  
+                        </div>
+                        <div class="email">
+                            <label for="email" class="modalName">email</label>
+                            <input type="email" class="modalInputEmail" placeholder=" email " required>
+                        </div>
+                        <div class="pass">
+                            <label for="password" class="modalName"> contraseña </label>
+                            <input type="password" class="modalInputPass" placeholder=" contraseña " required>
+                        </div>           
+                        <button type="submit" class="suBtn" >Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Fondo sombreado -->
+            <div id="modalBackdrop" class="modal-backdrop"></div>
+        
+    </section>
 
         <!-- Slideshow container -->
         <div class="slideshow-container">
