@@ -1,6 +1,8 @@
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"
 import{auth} from './firebaseConfig.js';
 
+import { loginCheck } from "./loginCheck.js";
+
 
 const siginForm = document.querySelector('.modalForm')
 const modal = document.getElementById('loginModal')
@@ -22,13 +24,17 @@ siginForm.addEventListener('submit', async event=>{
         document.body.style.overflow = 'auto';
         
         console.log(userCredentials)
+
+        loginCheck(userCredentials.user)
+
     }catch(error){
         const firebaseErrors = {
             'auth/user-not-found':'User not registerd',
             'auth/wrong-password':'Icorrect Password'
         };
 
-        console.log(firebaseErrors[error.code] || 'Something went wrong.');
+        // console.log(firebaseErrors[error.code] || `Something went wrong. ${error}`);
+        console.log(error)
     }
     siginForm.reset();
 })

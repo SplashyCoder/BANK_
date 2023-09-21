@@ -53,6 +53,10 @@ header {
     display: none;
 }
 
+.logOutNavBtn{
+    display: none;
+}
+
 .imgRespon{
     display: none;
 }
