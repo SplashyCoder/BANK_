@@ -8,24 +8,19 @@ export const setUpPost = data =>{
 
         data.forEach(i => {
             const post = i.data();
-            console.log(post);
 
             const li = `    
-            <li>
-                <div class="postCardCont;">
-                    <div class="postCard">
-                        <div class="col-md-4">
-                            <img src=${post.url} class="postImg" alt="Img not found">
-                        </div>
-                        <div class="postCardIn">
-                            <div class="card-body">
-                                <h5 class="card-title">${post.title}</h5>
-                                <p class="card-text">${post.content}</p>
-                            </div>
+                <div class="postCard">
+                    <div class="col-md-4">
+                        <img src=${post.url} class="postImg" alt="Img not found">
+                    </div>
+                    <div class="postCardIn">
+                        <div class="card-body">
+                            <h5 class="card-title">${post.title}</h5>
+                            <p class="card-text">${post.content}</p>
                         </div>
                     </div>
                 </div>
-            </li>
             `
             inner += li
         });
