@@ -22,10 +22,16 @@ siginForm.addEventListener('submit', async event=>{
         modal.style.display = 'none';
         modalBackdrop.style.display = 'none';
         document.body.style.overflow = 'auto';
-        
-        console.log(userCredentials)
 
-        loginCheck(userCredentials.user)
+        if(userCredentials){
+            loginCheck(userCredentials.user)
+
+            window.location.pathname == '/BANC0/index.html' ? 
+            location.replace('./POST/post.html'):
+            location.replace('../POST/post.html')
+        }
+        
+        
 
     }catch(error){
         const firebaseErrors = {
@@ -33,8 +39,7 @@ siginForm.addEventListener('submit', async event=>{
             'auth/wrong-password':'Icorrect Password'
         };
 
-        // console.log(firebaseErrors[error.code] || `Something went wrong. ${error}`);
-        console.log(error)
+        console.log(firebaseErrors[error.code] || `Something went wrong. ${error}`);
     }
     siginForm.reset();
 })

@@ -8,6 +8,7 @@ import '../SCRIPST/nav.js'
 import '../SCRIPST/auth.js'
 import { loginCheck } from '../SCRIPST/loginCheck.js'
 import '../SCRIPST/logout.js'
+import '../SCRIPST/newPost.js'
 
 
 loginCheck(undefined)
