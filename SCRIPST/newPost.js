@@ -12,7 +12,6 @@ dataForm.addEventListener('submit', async event =>{
     const newContent = document.querySelector('.newPosTitleInp').value;
     const newImg = document.querySelector('#newPostImg').files[0];
     const dataName = document.querySelector('#newPostImgName').value;
-
     
     try{
     
