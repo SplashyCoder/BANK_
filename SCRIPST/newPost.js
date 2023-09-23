@@ -1,7 +1,9 @@
 import { newData } from './dbManage.js'; 
 import {uploadFile, uploadImg} from './storageManage.js'
+import { v4 } from './v4uuid.js';
 
 const dataForm = document.querySelector('.postForm');
+const btn = document.querySelector('#btnholo')
 
 
 
@@ -9,15 +11,14 @@ dataForm.addEventListener('submit', async event =>{
     event.preventDefault();
     
     const newTitle = document.querySelector('.newPosTitleInp').value;
-    const newContent = document.querySelector('.newPosTitleInp').value;
+    const newContent = document.querySelector('.newPostContInp').value;
 
     const newImg = document.querySelector('#newPostImg').files[0];
-    const dataNameImg = document.querySelector('#newPostImgName').value;
+    const dataNameImg = await v4()
 
     const newFile = document.querySelector('#newPostFile').files[0];
-    const dataNameFile = document.querySelector('#newPostImgName').value;
+    const dataNameFile = await v4();
 
-    const URL = "https://www.uuidgenerator.net/api/version4"
     
     try{
 
