@@ -2,8 +2,8 @@ import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.4.0/fi
 import{auth} from './firebaseConfig.js';
 
 
-const loginLinks= document.querySelector('#loginNavBtn');
-const logoutLinks= document.querySelector('#logOutNavBtn');
+const loginLinks = document.querySelector('#loginNavBtn');
+const logoutLinks = document.querySelectorAll('#logOutNavBtn');
 
 //console.log(loginLinks,logoutLinks)
 
@@ -12,10 +12,10 @@ const logoutLinks= document.querySelector('#logOutNavBtn');
 export const loginCheck = (user) =>{
     onAuthStateChanged(auth, async user => {
         if(user){
-            logoutLinks.style.display = 'block'
+            logoutLinks.forEach(link => link.style.display = 'block') 
             loginLinks.style.display = 'none'
         }else{
-            logoutLinks.style.display = 'none'
+            logoutLinks.forEach(link => link.style.display = 'none') 
             loginLinks.style.display = 'block'
         }
     }
