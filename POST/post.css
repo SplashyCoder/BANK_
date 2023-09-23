@@ -285,7 +285,7 @@ header {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
-
+    height: fit-content;
 }
 
 .postForm>div{
@@ -293,6 +293,7 @@ header {
     flex-direction: column;
     gap: 5px;
     font-size: 2em;
+    height: fit-content;
 }
 
 .newPostContInp{
