@@ -10,4 +10,4 @@ import '../SCRIPST/newPost.js'
 import {protect} from '../SCRIPST/protect.js'
 
 loginCheck(undefined)
-protect(undefined)
+protect()

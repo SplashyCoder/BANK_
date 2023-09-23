@@ -4,7 +4,7 @@ import {auth} from'./firebaseConfig.js'
 import { loginCheck } from "./loginCheck.js";
 
 
-const logout = document.querySelector('#logOutNavBtn');
+const logout = document.querySelector('.logOutChecker');
 
 logout.addEventListener('click', async event =>{
     // console.log('logout')
