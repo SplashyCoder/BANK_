@@ -279,7 +279,7 @@ header {
     display: grid;
     grid-template-columns: 
     repeat(auto-fit,
-    minmax(300px, 1fr)
+    minmax(370px, 1fr)
     );
     gap: 32px;
 }

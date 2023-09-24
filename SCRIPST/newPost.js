@@ -1,9 +1,9 @@
 import { newData } from './dbManage.js'; 
 import {uploadFile, uploadImg} from './storageManage.js'
 import { v4 } from './v4uuid.js';
+import { loadingDrop } from './newPostNotice.js';
 
 const dataForm = document.querySelector('.postForm');
-const btn = document.querySelector('#btnholo')
 
 
 
@@ -19,7 +19,8 @@ dataForm.addEventListener('submit', async event =>{
     const newFile = document.querySelector('#newPostFile').files[0];
     const dataNameFile = await v4();
 
-    
+    loadingDrop()
+
     try{
 
         const resultFile = await uploadFile(newFile,dataNameFile);    
@@ -27,10 +28,11 @@ dataForm.addEventListener('submit', async event =>{
         
         await newData(newTitle,newContent,resultImg,resultFile);
 
-        alert('Publicacion exitosa')
+
         dataForm.reset()
 
     }catch(error){
         console.log(error)
     }
 });
+

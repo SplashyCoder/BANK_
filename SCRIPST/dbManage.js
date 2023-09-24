@@ -11,7 +11,7 @@ export const newData = async (title, content, urlImg, urlFile, colection = 'post
             urlImg,
             urlFile
         });
-        console.log("Document written with ID: ", docRef.id);
+        // console.log("Document written with ID: ", docRef.id);
     } catch (error) {
         console.error("Error adding document: ", error);
     }

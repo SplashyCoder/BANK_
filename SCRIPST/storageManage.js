@@ -9,7 +9,6 @@ export const uploadImg = async (file,name) =>{
         const spaceRef = ref(storage, ImgName);
         await uploadBytes(spaceRef, file);
         const url = await getDownloadURL(spaceRef)
-        console.log(url)
         return (url);
 
     } catch (error) {
@@ -26,7 +25,6 @@ export const uploadFile = async (file,name) =>{
         const spaceRef = ref(storage, fileName);
         await uploadBytes(spaceRef, file);
         const url = await getDownloadURL(spaceRef)
-        console.log(url)
         return (url);
 
     } catch (error) {

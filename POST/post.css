@@ -134,12 +134,39 @@ header {
     z-index: 20;
 }
 
+.formTopDrop{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+}
+
+.formTopDrop>h1{
+    color: #fff;
+    font-size: 3em;
+}
+
+
+
+.loading{
+    color: #fff;
+    font-size: 3em;
+}
+
 
 .presentation{
     /* overflow: hidden; */
     height: fit-content;
-    top: 0;
+    padding: 20px;
+    /* height: 500px; */
 }
+
 .presentationBackground{
     height: 100%;
 }
@@ -275,7 +302,7 @@ header {
 
 
 .postFormCont{
-    width: 90%;
+    width: 50%;
     height: fit-content;
     /* border: 5px #000 solid; */
 
@@ -425,6 +452,13 @@ header {
     }
     .directions>div>p{
         margin: 0 0 0 10px ;
+    }
+    
+    .postFormCont{
+        width: 90%;
+        height: fit-content;
+        /* border: 5px #000 solid; */
+    
     }
     
 

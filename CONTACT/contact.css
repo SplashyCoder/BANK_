@@ -141,6 +141,7 @@ header {
 .presentation{
     /* overflow: hidden; */
     height: fit-content;
+    padding: 20px;
 }
 
 
