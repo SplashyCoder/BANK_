@@ -275,7 +275,7 @@ header {
 
 
 .postFormCont{
-    width: 50%;
+    width: 90%;
     height: fit-content;
     /* border: 5px #000 solid; */
 
@@ -294,6 +294,7 @@ header {
     gap: 5px;
     font-size: 2em;
     height: fit-content;
+    width: 90%;
 }
 
 .newPostContInp{

@@ -590,8 +590,10 @@ header {
     }
 
     .wellCont{
+        position: relative;
         flex-direction: column;
-        height: 300px;
+        height: 100px;
+        top: 50px;
     }
     
     .wellcome{
@@ -599,6 +601,7 @@ header {
         grid-template-rows: repeat(2,1fr);
         justify-content: center;
         justify-items: center;
+        height: fit-content;
     }
 
     .weLogo{
@@ -674,8 +677,13 @@ header {
         grid-template-rows: repeat(2,1fr);
         grid-template-columns: 1fr;
         padding: 0;
-        
+        height: 1400px;
     }
+
+    .advantagesLeftCont {
+        height: fit-content;
+    }
+
     .advantagesRightCont{
         grid-column: 1/2;
         grid-row: 2/3;
